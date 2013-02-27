@@ -1,0 +1,60 @@
+@import url('reset.css');
+
+html {
+	background: url(../img/top.jpg) no-repeat top left fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow:hidden;
+}
+
+body{ font-family:"Century Gothic",Helvetica,sans-serif;font-size:10px;color:#000; letter-spacing:2px; }
+h1,h2{ font-size:40px; }
+h3{ font-size:20px; line-height:30px; border-bottom:0px solid #AAA; margin-bottom:5px;}
+
+p{ margin:0 0 10px 0; }
+a{ color:inherit;text-decoration:none;outline:0; }
+
+.bold{ font-weight:bold; }
+
+#wrap		{ position:absolute; height:100%;width:100%;top:0;left:0;overflow:auto; }
+#nav		{ z-index:9000;  }
+#content	{ z-index:8000; overflow:hidden; }
+#content, #nav{ position:absolute; }
+
+#nav{ height:40px; width:100%; bottom:0; left:0; color:#999; background:#000; opacity:0.6; filter:alpha(opacity=60); padding:20px; font-size:12px; }
+
+#nav a { color:#aaa; }
+#nav a:hover { color:#eee; }
+
+#nav #title, #nav #info { height:100%; display:inline-block; }
+#nav #title { float:left; }
+
+#nav #info { margin-left:80px; margin-top:6px; }
+#nav #info .nav-item{ margin-bottom:5px; }
+#nav #info .contact{ margin-top:7px; color:#888; }
+#nav #info .bold a{ font-weight:bold; color:#ddd; }
+#nav #info .bold a:hover{ color:#fff; }
+#nav #info .normal a{ font-weight:normal; color:#eee; }
+#nav #info .normal a:hover { color:#fff; }
+
+#content{ width:500px; padding:10px 10px 100px 10px; top:10%; left:10%; font-size:14px; letter-spacing:1px; word-spacing:3px; line-height:17px; }
+#content{ background:#fff; opacity:0.5; filter:alpha(opacity=50); }
+#content a { text-decoration: underline; }
+
+#event-banner{ width:100%; height:300px; background:url(../img/light.png) no-repeat center; }
+#event-content{ width:800px; height:100%; margin:0 auto 10px auto; }
+.event-text{ width:500px; margin:0; padding:10px 10px 100px 10px; font-size:14px; letter-spacing:1px; word-spacing:3px; line-height:17px; color: #fff; display:inline-block; float:left;}
+.event-text, .event-side{ background:#000; opacity:0.5; filter:alpha(opacity=50);}
+
+.event-side{ width: 250px; margin:0; padding:10px 10px 10px 10px; font-size:14px; letter-spacing:1px; word-spacing:3px; line-height:17px; color: #fff; display:inline-block;float:right;}
+.event-side ul{ margin:0 0 10px 0; }
+.event-side a{ color:#aaa; }
+.event-side a:hover{ color:#fff; }
+
+.dim{ color:#888; }
+
+.left	{ top:10%;left:10%; }
+.right	{ top:10%;right:10%; }
+.white	{ color:#fff; }
